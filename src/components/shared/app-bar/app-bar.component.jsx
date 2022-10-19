@@ -9,9 +9,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import logo from '../../../img/logo.png';
+import logo from '../../../img/fake_store.png';
 
-const pages = ['Послуги', 'Новини', 'Контакти'];
+const pages = ['Послуги', 'Новини', 'Контакти', 'Підтримка', 'Вакансії'];
 
 const AppBarComponent = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,10 +25,10 @@ const AppBarComponent = () => {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: '#fff', background: 'cornsilk', boxShadow: "none" }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters style={{ flexDirection: 'row-reverse' }}>
-          <Box style={{ flexDirection: 'inherit' }} sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+    <AppBar position="static" style={{ backgroundColor: '#fff', background: 'cornsilk', boxShadow: "none", position: 'fixed', top: '0' }}>
+      <Container maxWidth="false">
+        <Toolbar disableGutters>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               style={{ backgroundColor: '#ff3d00' }}
               size="large"
@@ -65,7 +65,6 @@ const AppBarComponent = () => {
               ))}
             </Menu>
           </Box>
-          <img src={logo} alt="company-logo" style={{width: "10rem", padding: "1rem"}} />
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -77,6 +76,7 @@ const AppBarComponent = () => {
               </Button>
             ))}
           </Box>
+          <img src={logo} alt="company-logo" style={{width: "10rem", padding: "1rem"}} />
         </Toolbar>
       </Container>
     </AppBar>

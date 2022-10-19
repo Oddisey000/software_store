@@ -3,7 +3,7 @@ import "./footer.component.scss";
 
 const FooterComponent = () => {
   return (
-    <span className="footer-text splashInBottom">
+    <span className="footer-text">
       &copy; 2022 &nbsp;
       <a
         className="link"

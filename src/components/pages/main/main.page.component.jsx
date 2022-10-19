@@ -10,6 +10,7 @@ const MainPageComponent = () => {
     <React.Fragment>
       <AppBarComponent />
       <TopProduct />
+      <TopProduct />
       <FloatingActionButton />
       <FooterComponent />
     </React.Fragment>
