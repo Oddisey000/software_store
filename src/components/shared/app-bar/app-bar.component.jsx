@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import logo from '../../../img/fake_store.png';
+import logo from '../../../img/logo.png';
 
 const pages = ['Послуги', 'Новини', 'Контакти', 'Підтримка', 'Вакансії'];
 
@@ -27,8 +27,8 @@ const AppBarComponent = () => {
   return (
     <AppBar position="static" style={{ backgroundColor: '#fff', background: 'cornsilk', boxShadow: "none", position: 'fixed', top: '0' }}>
       <Container maxWidth="false">
-        <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+        <Toolbar disableGutters style={{ flexDirection: 'row-reverse' }}>
+          <Box style={{ flexDirection: 'inherit' }} sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               style={{ backgroundColor: '#ff3d00' }}
               size="large"
